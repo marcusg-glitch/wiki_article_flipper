@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Wikipedia Article</title>
+  <style>
+    body { font-family: Arial, sans-serif; width: 300px; height: 100px; overflow: hidden; transition: width 0.3s, height 0.3s; }
+    #articleTitle { font-size: 18px; font-weight: bold; margin: 10px 0; }
+    #articleIntro { margin: 10px 0; }
+    #articleImage { width: 100%; height: auto; margin: 10px 0; }
+    .hidden { display: none; }
+    button { background-color: #4CAF50; color: white; padding: 10px 20px; border: none; cursor: pointer; margin: 10px 0; border-radius: 5px; }
+    button:hover { background-color: #45a049; }
+    .container { padding: 10px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button id="fetchArticleButton">Flip</button>
+    <div id="articleDetails" class="hidden">
+      <div id="articleTitle"></div>
+      <div id="articleIntro"></div>
+      <img id="articleImage" src="" alt="Article Image" class="hidden"/>
+      <button id="expandButton">Go to article</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
